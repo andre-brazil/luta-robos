@@ -1,0 +1,39 @@
+Criar uma especificação de desenvolvimento de um jogo 3d de luta entre 2 robôs com estilo visual low poly com visão lateral para web, considerando-se os seguintes itens:
+
+1. Controles do jogador 1: tecla j para mover para esquerda, tecla l para direita, k para agachar e i para pular, tecla c para chute, tecla x para soco, tecla z para bloqueio.
+
+2. Controles do jogador 2: tecla 4 para mover para esquerda, tecla 6 para direita, 5 para agachar e 8 para pular, tecla del para chute, tecla end para soco, e tecla page down para bloqueio.
+
+3. Interface: No topo é apresentada uma barra vermelha de vida para cada robô, que inicia com 100 pontos de vida, representando o total de pontos de vida de cada um dos jogadores. 
+
+4. Cenário: Ao fundo é apresentado um cenário futurista, com prédios e postes, e uma rua, onde os robôs vão lutar.
+
+5. Ações do jogo: 
+Bloqueio - enquanto acionado, o robô permanece em posição defensiva, impedindo que o robô sofra qualquer ataque, mas não permitindo que o robô se mova.
+Chute - golpe lento, que reduz 10 pontos de vida do oponente
+Soco - golpe rápido, que reduz 5 pontos de vida do oponente
+Rasteira - golpe normal, que reduz 7 pontos de vida do oponente
+
+
+caso o oponente do jogador não esteja bloqueio o chute 
+
+
+
+
+
+
+e o outro robô é controlado pela lógica do jogo
+
+1. Atributos do Robô 
+Vida
+Força
+Velocidade
+Resistência
+Energia
+Armadura
+
+2. Golpes do Robô
+
+
+
+

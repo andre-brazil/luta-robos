@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Luta de Robôs 3D</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #04050c; overflow: hidden; }
+  #app { position: fixed; inset: 0; }
+  #app canvas { display: block; }
+  #cdn-fail { position: fixed; inset: 0; display: none; align-items: center; justify-content: center;
+    color: #9adfff; font-family: 'Courier New', monospace; font-size: 16px; text-align: center; padding: 2em; }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div id="cdn-fail">Não foi possível carregar o three.js (CDN).<br>Verifique a conexão com a internet e recarregue a página.</div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+<script>
+  window.LR = window.LR || {};
+  if (!window.THREE) { document.getElementById('cdn-fail').style.display = 'flex'; }
+</script>
+<script src="src/config/game.config.js"></script>
+<script src="src/engine/input.js"></script>
+<script src="src/engine/loop.js"></script>
+<script src="src/engine/renderer.js"></script>
+<script src="src/scene/arena.js"></script>
+<script src="src/scene/camera.js"></script>
+<script src="src/characters/attributes.js"></script>
+<script src="src/characters/robot.js"></script>
+<script src="src/characters/animation.js"></script>
+<script src="src/combat/hitbox.js"></script>
+<script src="src/combat/fighter.js"></script>
+<script src="src/ai/opponent.js"></script>
+<script src="src/audio/sounds.js"></script>
+<script src="src/ui/hud.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>CDN test</title></head>
+<body>
+<div id="out">pending</div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+<script>
+  try {
+    var r = new THREE.WebGLRenderer();
+    var gl = r.getContext();
+    document.getElementById('out').textContent = 'THREE_OK rev=' + THREE.REVISION + ' gl=' + (gl ? gl.getParameter(gl.VERSION) : 'null');
+  } catch (e) {
+    document.getElementById('out').textContent = 'THREE_FAIL ' + e.message;
+  }
+</script>
+</body>
+</html>
